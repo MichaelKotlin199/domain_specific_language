@@ -1,3 +1,3 @@
 package org.example.exception
 
-sealed class ResponseMatchersException(message: String) : RuntimeException(message)
+open class ResponseMatchersException(message: String) : AppException(message)
